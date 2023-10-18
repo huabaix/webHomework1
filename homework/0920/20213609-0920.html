@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linux shell 学习笔记</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-image: url(https://img.zcool.cn/community/019ead5da989b5a801209e1f598699.jpg@1280w_1l_2o_100sh.jpg);
+        }
+
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            color: rgb(255, 255, 255);
+        }
+
+        ul {
+            /*定位：使导航栏跟随滚动条滚动*/
+            position: fixed;
+            list-style-type: none;
+            width: 8%;
+            height: 100%;
+            background-color: rgb(255, 255, 255, .5);
+        }
+
+        li button {
+            /*将buttom内联元素转换为块级元素，便于padding设定*/
+            color: #000000;
+            padding: 16px 25px 16px;
+            border: none;
+            font-size: 30px;
+        }
+
+        li button:hover {
+            background-color: #555;
+            color: rgb(255, 255, 255,.5);
+        }
+
+        li button.active {
+            background-color: #333333;
+            color: white;    
+        }
+
+      
+
+        .outer {
+            position: relative;
+            left: 15%;
+            width: 1200px;
+            height: auto;
+            top: 35px;
+            border: 1px solid rgb(255, 255, 255);
+        }
+
+        .soft {
+            width: 300px;
+            float: left;
+            height: 250px;
+            box-shadow: 0 1px 1px white;
+            background-color: rgb(255, 255, 255, .3);
+            font-size: 25px;
+        }
+
+        .intelligent {
+            width: 300px;
+            height: 250px;
+            float: left;
+            box-shadow: 0 1px 1px white;
+            background-color: rgb(255, 255, 255, .3);
+            font-size: 25px;
+
+        }
+
+        .education {
+            width: 300px;
+            height: 250px;
+            float: left;
+            box-shadow: 0 1px 1px white;
+            background-color: rgb(255, 255, 255, .3);
+            font-size: 25px;
+        }
+
+        .internet {
+            width: 300px;
+            height: 250px;
+            float: left;
+            box-shadow: 0 1px 1px white;
+            background-color: rgb(255, 255, 255, .3);
+            font-size: 25px;
+        }
+        .im{
+            position: absolute;
+            left: 400px;
+            top: 47%
+        }
+        a{
+           text-decoration: none; 
+           color: rgb(255, 255, 255,.5);
+           text-align:center;
+        }
+       
+    </style>
+
+    <script>
+        function myfunction1() {
+            document.getElementById("word").src = "../../mytxt/education.txt";
+        }
+        function myfunction2() {
+            document.getElementById("word").src = "../../mytxt/intelligent.txt";
+        }
+        function myfunction3() {
+            document.getElementById("word").src = "../../mytxt/internet.txt";
+        }
+        function myfunction4() {
+            document.getElementById("word").src = "../../mytxt/soft.txt";
+        } 
+        
+    </script>
+</head>
+
+<body>
+    <ul>
+        <li><button class="active">主 页</button></li>
+        <li> <button type="button" onclick="myfunction1()">教育公司</button></li>
+        <li> <button type="button" onclick="myfunction2()">智能公司</button></li>
+        <li><button type="button" onclick="myfunction3()">网络公司</button></li>
+        <li><button type="button" onclick="myfunction4()">软件公司</button></li>
+    </ul>
+
+    <h1>中国公司分类</h1>
+
+    <div class="outer">
+        <div class="soft">
+            <h1>软件</h1>
+            
+            <img src="https://tse3-mm.cn.bing.net/th/id/OIP-C.UJQB35Eju2-zSsIHGxndfgAAAA?pid=ImgDet&rs=1" width="100px",height="100px"><br>
+            北京小米移动软件有限公司<br>
+            <a href="https://www.mi.com/about" >点击了更多</a>
+        </div>
+        <div class="internet">
+            <h1>网络</h1>
+            <img src="https://yun-campus-res.oss-cn-shenzhen.aliyuncs.com/company/1582643672-3295.png" width="200px",height="10px"><br>
+            北京字节跳动网络有限公司<br>
+            <a href="https://www.bytedance.com/zh/">点击了更多</a>
+        </div>
+        <div class="intelligent">
+            <h1>智能</h1>
+            杭州德迪智能科技有限公司
+            <a href="https://www.qcc.com/firm/521f2de34437c8fd1fc57b713f370b4c.html">点击了更多</a>
+        </div>
+       
+        <div class="education">
+            <h1>教育</h1>
+            南京乾学教育科技有限公司
+            <a href="https://www.qcc.com/firm/c12eb8d350e2f3ffc303ab3648b555fc.html">点击了更多</a>
+        </div>
+
+    </div>
+
+    <div>
+    </div>
+<div class="im">  
+    <h2 style="color: rgb(255, 255, 255);">内容:</h2>
+    <iframe  id="word" width="800px" height="320px" style="background-color: rgb(199, 201, 202,.5);"></iframe>
+</div>  
+</body>
+
+</html>

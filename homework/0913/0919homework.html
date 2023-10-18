@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20213609刘子欣</title>
+  <style>
+    body{
+        /* background:linear-gradient(white,grey,black); */
+        background: linear-gradient(70deg, pink,rgb(147, 147, 207),purple, rgb(255, 255, 255));
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    h1{
+        text-align: center;
+        font-size: 60px;
+        font-family:STCaiyun;
+    }
+    .one {
+        width: 65%;
+        height:100% ;
+        position: relative;
+        top: 0;
+        left: 32%;
+        box-shadow: 0 5px 30px #ffffff;
+        background-color:white;
+        background: linear-gradient(to bottom left , white, rgb(168, 51, 214));
+        border-radius: 25px;   
+    }
+    .two{
+        position: absolute;
+        left: 4%;
+        width:25%;
+        top:65%;
+        box-shadow: 0 10px 30px white ;
+        background: linear-gradient(to bottom right, rgb(88, 138, 255), pink);
+        border-radius: 25px; 
+    }
+    .three{
+        top: 200px;
+        position: absolute;
+        left: 6%;
+        width:220px;
+        height: 250px;
+        box-shadow: 0 5px 30px white;
+        background-color:white;
+        border-radius: 25px; 
+    
+        background-image: url(./cxk.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    .two p {
+        text-indent: 2em;
+        font-size: 25px;
+        margin: 20px;
+        line-height: 40px;
+    }
+
+    li{
+        margin: 5px;
+        padding: 5px;
+        font-size: 25px;
+    }
+    h1{
+        color: white;
+    }
+  </style>
+</head>
+<body>
+   <h1>0913 linux shell命令学习</h1>
+   <hr>
+<div class="one ">
+    <h2>命令：</h2>
+        <ul>
+            <li>
+                列文件夹命令:ls <br>
+                ls -R 递归选项。列出了当前目录下包含的子目录中的文件<br>
+                    1.转到20213609liuzx文件夹 -cd 20213609liuzx <br>
+                    2.列出了当前目录下包含的子目录中的所有文件 ls -R <br>
+                ls -F 区分文件和目录，目录名称后面带了(/) ,会在可执行文件后面带上（*）,类似.publish.sh的文件。<br>
+                ls -a 显示所有文件目录，包括隐藏。<br>
+            </li>
+            <li>
+                重命名文件（移动）<br>
+                在Linux中，重命名文件称为移动，mv命令可以将文件和目录移动到另外一个位置或重新命名。<br>
+                例如 mv test_onea test_oneb  //重命名 <br>
+                tab键自动补全命令，非常实用<br>
+
+            </li>
+            <li>
+                解包命令:tar -xf mp3<br>
+                解析解包命令:tar -[主选项+辅选项] 文件或者目录,主选项，必须要有，辅选项是辅助使用的，可以选用。<br>
+                x:从文件包中释放文件，相当于解析包<br>
+                f:指定压缩包名称<br>
+            </li>
+            <li>
+                删包命令:rm  LinuxCMD-1.mp3<br>
+                可能会出现的选项:rm: remove write-protected regular file 'LinuxCMD-1.mp3'?————这是删除保护文件夹的询问选项<br>
+                输入y即可
+            </li>
+            <li>
+                用浏览器播放视频文件命令:<br>
+                #!/bin/sh<br>
+                "你的浏览器地址\chrome.exe" '你要打开的文件的地址'$1<br>
+                例如:<br>
+                #!/bin/sh<br>
+                $ "C:\Program Files
+                (x86)\Microsoft\Edge\Application\msedge.exe"'E:\Editor pr\0417/0417.MP4'$1
+            </li>
+        </ul>
+    </div>
+<div class="two ">
+    <h2>总结</h2>
+    <p>linux 的学习是需要自己系统的看书，课堂只是辅助。<strong>教你码</strong><br>
+        经过学习，已经掌握一些基本指令：<br></p>
+        <li>
+            cd,ls,pwd,mkdir,rm
+        </li>
+        <li>
+            rmdir,mv,cp,cat,head,tail
+        </li>
+      <p>仍还有很多需要学习，在课外也要花时间去学习，让自己有提高进步</p> 
+</div>
+    <div class="three">   
+    </div>     
+</body>
+</html>

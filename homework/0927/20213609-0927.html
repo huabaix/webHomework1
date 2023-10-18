@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    html {
+  background-color: #F5F5F5;
+  -webkit-text-size-adjust: 100%;
+  background-image: linear-gradient(rgba(233, 225, 116, 0.1), rgba(235, 235, 119, 0.1));
+  
+}
+body {
+  font-size: 20px;
+  line-height: 2.0em;
+  font-family: Arial, Helvetica, sans-serif, "Hiragino Sans GB";
+  color: #3C3C3C;
+}
+#wrapper {
+  margin: 0 auto;
+  padding: 3% 5%;
+  width: 95%;
+  max-width: 960px;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: white;
+  letter-spacing: 0.5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+   </style>
+</head>
+
+<body>
+<div id="wrapper" class="typo"> 
+<h1>课堂学习</h1>
+tracert 域名:通过报错信息来确定到这个域名的路由<br>
+cut -d '[每行要分割的字符]' -f1 文件路径<br>
+cut --delimiter='[每行要分割的字符]' -f1 文件路径<br>
+<h2>补充扩展</h2>
+<p><strong>cut命令后可加的参数含义：</strong></p>
+-b ：以字节为单位进行分割。这些字节位置将忽略多字节字符边界，除非也指定了 -n 标志。<br>
+-c ：以字符为单位进行分割。<br>
+-d ：自定义分隔符，默认为制表符。<br>
+-f ：与-d一起使用，指定显示哪个区域。<br>
+-n ：取消分割多字节字符。仅和 -b 标志一起使用。<br>
+如果字符的最后一个字节落在由 -b 标志的 List 参数指示的 范围之内，该字符将被写出；否则，该字符将被排除<br>
+
+ <p><strong>cut命令后可加的参数含义：</strong></p>
+ -b ：以字节为单位进行分割。这些字节位置将忽略多字节字符边界，除非也指定了 -n 标志。<br>
+-c ：以字符为单位进行分割。<br>
+-d ：自定义分隔符，默认为制表符。<br>
+-f ：与-d一起使用，指定显示哪个区域。<br>
+-n ：取消分割多字节字符。仅和 -b 标志一起使用。
+如果字符的最后一个字节落在由 -b 标志的 List 参数指示的 范围之内，该字符将被写出；否则，该字符将被排除<br>
+
+<p><strong>tracert命令后可加的参数含义：</strong></p>
+-d：表示不让 tracert 根据节点主机名查找路由的 IP 地址，直接进行路由跟踪。
+当路由器不支持 ICMP/UDP/ICMPv6 数据包时，建议使用该选项。<br>
+-h maximum_hops：指定最多经过多少个节点进行路由跟踪，默认值为 30。使用该选项可以更改该值。<br>
+-j host-list：枚举一个节点列表，并在路由跟踪过程中只走该列表中的节点。<br>
+-w timeout：设置等待每个回复消息的超时时间，默认值为 4000 毫秒。使用该选项可以更改该值。<br>
+-R：指示 tracert 跟踪路由时，使用“参考路由”而不是“严格源路由”。
+如果启用了该选项，则可以跨越某些无法到达的能够到达目标的路由器。<br>
+-S srcaddr：指定源地址。如果在单个计算机上安装了多个网络适配器，
+则使用该选项可以指定从哪个适配器发出路由跟踪请求。<br>
+-4：强制使用 IPv4 进行路由跟踪。<br>
+-6：强制使用 IPv6 进行路由跟踪。<br>
+target_name：表示要查询的目标 IP 地址或主机名<br>
+<br>
+<h1>作业</h1>
+用wc cet06.txt 命令查询，共5500个单词
+使用命令cut -d '/' -f1 cet6.txt | grep '^a' | wc   可发现a开头的单 词数量为367，
+接下来的25个字母分别用这个命令进行检索
+<h1>如下：</h1>
+a:367
+b:274
+c:560
+d:321
+e:277
+f:256
+g:147
+h:188
+i:232
+j:36
+k:31
+l:186
+m:255
+n:114
+o:152
+p:449
+q:28
+r:311
+s:646
+t:294
+u:68
+v:94
+w:154
+x:1
+y:17
+z:9
+<br>
+<h2>以下链接显示了以 a,x开头,cet6.txt中的所有单词</h2>
+grep '^a' cet6.txt > a.txt 抓取所有a开头单词存入a.txt文本中
+<h2>
+<a href="../../mytxt/a.txt">a开头的单词</a>
+<a href="../../mytxt/x.txt">x开头的单词</a>
+</h2>
+</div>
+</body>
+</html>
